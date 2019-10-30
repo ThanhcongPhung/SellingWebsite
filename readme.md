@@ -1,10 +1,11 @@
-# ![Laravel Example App](logo.png)
+<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
-[![Build Status](https://img.shields.io/travis/gothinkster/laravel-realworld-example-app/master.svg)](https://travis-ci.org/gothinkster/laravel-realworld-example-app) [![Gitter](https://img.shields.io/gitter/room/realworld-dev/laravel.svg)](https://gitter.im/realworld-dev/laravel) [![GitHub stars](https://img.shields.io/github/stars/gothinkster/laravel-realworld-example-app.svg)](https://github.com/gothinkster/laravel-realworld-example-app/stargazers) [![GitHub license](https://img.shields.io/github/license/gothinkster/laravel-realworld-example-app.svg)](https://raw.githubusercontent.com/gothinkster/laravel-realworld-example-app/master/LICENSE)
-
-> ### Example Laravel codebase containing real world examples (CRUD, auth, advanced patterns and more) that adheres to the [RealWorld](https://github.com/gothinkster/realworld-example-apps) spec and API.
-
-This repo is functionality complete — PRs and issues welcome!
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+</p>
 
 ----------
 
@@ -48,8 +49,8 @@ You can now access the server at http://localhost:8000
 
 **TL;DR command list**
 
-    git clone git@github.com:gothinkster/laravel-realworld-example-app.git
-    cd laravel-realworld-example-app
+    git clone git@github.com:ThanhcongPhung/SellingWebsite.git
+    cd SellingWebsite
     composer install
     cp .env.example .env
     php artisan key:generate
