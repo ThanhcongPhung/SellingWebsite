@@ -27,6 +27,6 @@ Route::get('/admin/check-pwd','AdminController@chkPassword');
 Route::match(['get','post'],'/admin/update-pwd','AdminController@updatePassword');
 //add banner
 Route::match(['get','post'],'/admin/add-banner','BannersController@addBanner');
-
+Route::match(['get','post'],'/admin/view-banner','BannersController@viewBanner');
 Route::get('/logout','AdminController@logout');
 

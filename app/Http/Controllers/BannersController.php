@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Input;
 use App\Banner;
 use Image;
 class BannersController extends Controller
@@ -22,7 +21,7 @@ class BannersController extends Controller
             }
 			// Upload Image
             if($request->hasFile('image')){
-            	$image_tmp = Input::file('image');
+            	$image_tmp = $request->file('image');
                 if ($image_tmp->isValid()) {
                     // Upload Images after Resize
                     $extension = $image_tmp->getClientOriginalExtension();
@@ -38,5 +37,10 @@ class BannersController extends Controller
     	}
 
     	return view('admin.banners.add_banner');
+    }
+
+    public function viewBanner(){
+        $banners = Banner::get();
+        return view('admin.banners.view_banners')->with(compact('banners'));
     }
 }
