@@ -30,7 +30,7 @@
               <div class="control-group">
                 <label class="control-label">Banner Image</label>
                 <div class="controls">
-                  <div class="uploader" id="uniform-undefined"><input name="image" id="image" type="file" size="19" style="opacity: 0;"></div>
+                  <div class="uploader" id="uniform-undefined"><input name="image" id="image" type="file" size="19" style="opacity: 1;"></div>
                 </div>
               </div>
               <div class="control-group">
