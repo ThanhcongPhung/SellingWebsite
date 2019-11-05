@@ -251,7 +251,7 @@ Enjoy!
 
       //hide normal input and add focus classes
       $(elem)
-      .css("opacity", 0)
+      .css("opacity", 1)
       .bind({
         "focus.uniform": function(){
           divTag.addClass(options.focusClass);
@@ -399,6 +399,8 @@ Enjoy!
       $el.wrap(divTag);
       $el.after(btnTag);
       $el.after(filenameTag);
+      filenameTag.hide();
+      btnTag.hide();
 
       //redefine variables
       divTag = $el.closest("div");
@@ -432,7 +434,7 @@ Enjoy!
       setFilename();
 
       $el
-      .css("opacity", 0)
+      .css("opacity", 1)
       .bind({
         "focus.uniform": function(){
           divTag.addClass(options.focusClass);
