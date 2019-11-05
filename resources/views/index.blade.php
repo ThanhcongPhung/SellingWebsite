@@ -28,19 +28,19 @@
                             <li data-target="#slider-carousel" data-slide-to="1"></li>
                             <li data-target="#slider-carousel" data-slide-to="2"></li>
                         </ol>
-                        
+
                         <div class="carousel-inner">
                              @foreach($banners as $key => $banner)
                                 <div class="item @if($key ==0) active @endif">
-                                    <a href="product/t-shirt" title="Banner_1">
+                                <a href="{{$banner->link}}" title="Banner_1">
                                     <img src="/images/frontend_images/banners/{{ $banner->image }}" style="width:250px;">
                                     </a>
                     <!-- src="{{ asset('/images/frontend_images/banners/'.$banner->image) }}" -->
                                 </div>
                             @endforeach
-               
+
                         </div>
-                        
+
                         <a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
                             <i class="fa fa-angle-left"></i>
                         </a>
@@ -48,17 +48,17 @@
                             <i class="fa fa-angle-right"></i>
                         </a>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </section><!--/slider-->
-    
+
     <!--  -->
-    
+
 @endsection
             <div class="carousel-inner">
-               
+
             </div>
 
             <!-- <div class="content">
