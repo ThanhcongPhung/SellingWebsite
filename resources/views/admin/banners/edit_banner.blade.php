@@ -30,7 +30,7 @@
               <div class="control-group">
                 <label class="control-label">Banner Image</label>
                 <div class="controls">
-                  <div class="uploader" id="uniform-undefined"><input name="image" id="image" type="file" size="19" style="opacity: 0;"><span class="filename">No file selected</span><span class="action">Choose File</span></div>
+                  <div class="uploader" id="uniform-undefined"><input name="image" id="image" type="file" size="19" style="opacity: 1;"></div>
                   @if(!empty($bannerDetails->image))
                     <input type="hidden" name="current_image" value="{{ $bannerDetails->image }}">
                   @endif

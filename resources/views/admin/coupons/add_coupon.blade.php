@@ -31,7 +31,7 @@
                 <label class="control-label">Coupon Code</label>
                 <div class="controls">
                   <input type="text" name="coupon_code" id="coupon_code" maxlength="15" minlength="5" required>
-                  <input type="button" value="Create Random String" onClick="alert(generateRandomString(10))">
+                  <input type="button" value="Create Random String" onClick=set_coupon()>
                 </div>
               </div>
               <div class="control-group">
@@ -41,14 +41,24 @@
                 </div>
               </div>
               <div class="control-group">
-                    <label class="control-label">Amount Type</label>
-                    <div class="controls">
-                      <select name="amount_type" id="amount_type" style="width:220px;">
-                            <option value="Percentage">Percentage</option>
-                            <option value="Fixed">Fixed</option>
-                      </select>
-                    </div>
-                  </div>
+                <label class="control-label">Amount Type</label>
+                <div class="controls">
+                  <select name="amount_type" id="amount_type" style="width:220px;">
+                    <option value="Percentage">Percentage</option>
+                    <option value="Fixed">Fixed</option>
+                  </select>
+                </div>
+              </div>
+
+              <select class="browser-default custom-select">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+
+
+
               <div class="control-group">
                 <label class="control-label">Expiry Date</label>
                 <div class="controls">
@@ -71,5 +81,9 @@
     </div>
   </div>
 </div>
-
+<script type="text/javascript">
+  function set_coupon() {
+    $( "#coupon_code" ).val( generateRandomString(10) );
+  } 
+</script>
 @endsection
